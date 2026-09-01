@@ -1,0 +1,13 @@
+{
+  "name": "scs-global-service-onlus",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sito istituzionale statico di S.C.S. Global Service ONLUS",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.102.0"
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.scsglobalserviceonlus.it/sitemap.xml
