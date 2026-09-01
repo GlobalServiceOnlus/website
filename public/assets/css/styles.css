@@ -28,7 +28,7 @@ body {
 }
 body.menu-open { overflow: hidden; }
 a { color: inherit; }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 button, input, textarea, select { font: inherit; }
 
 .skip-link {
@@ -316,15 +316,66 @@ p { margin: 0 0 18px; color: var(--ink-700); }
 .legal-copy h3 { font-size: 1.12rem; margin-top: 28px; }
 .legal-copy ul { color: var(--ink-700); }
 
-.site-footer { background: #15263a; color: var(--white); padding: 58px 0 28px; }
-.footer-grid { display: grid; grid-template-columns: 1.15fr 1fr 0.85fr; gap: 44px; }
-.footer-logo { width: 230px; padding: 10px; border-radius: 10px; background: var(--white); margin-bottom: 18px; }
-.site-footer p, .site-footer address { color: #cbd6e3; font-style: normal; margin: 0; }
-.site-footer strong { display: block; margin-bottom: 12px; }
-.footer-links { display: grid; gap: 9px; }
-.footer-links a { color: #dbe4ee; text-decoration: none; }
-.footer-links a:hover { color: var(--white); text-decoration: underline; }
-.footer-bottom { margin-top: 42px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; justify-content: space-between; gap: 20px; color: #99aabd; font-size: 0.88rem; }
+.site-footer {
+  background: #15263a;
+  color: var(--white);
+  padding: 46px 0 22px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 0.75fr;
+  gap: 56px;
+  align-items: start;
+}
+.footer-logo {
+  width: 265px;
+  height: auto;
+  max-height: 82px;
+  object-fit: contain;
+  object-position: left center;
+  margin: 0 0 18px;
+  padding: 8px 10px;
+  border-radius: 9px;
+  background: var(--white);
+}
+.site-footer p,
+.site-footer address {
+  color: #cbd6e3;
+  font-style: normal;
+  margin: 0;
+  line-height: 1.72;
+  font-size: 0.94rem;
+}
+.site-footer strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--white);
+  font-size: 0.95rem;
+}
+.site-footer address + br {
+  display: block;
+  content: "";
+  margin-top: 18px;
+}
+.footer-links { display: grid; gap: 8px; }
+.footer-links a {
+  color: #dbe4ee;
+  text-decoration: none;
+  width: fit-content;
+  font-size: 0.94rem;
+}
+.footer-links a:hover { color: var(--white); text-decoration: underline; text-underline-offset: 4px; }
+.footer-bottom {
+  margin-top: 34px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #99aabd;
+  font-size: 0.82rem;
+}
+
 
 :focus-visible { outline: 3px solid rgba(79, 115, 168, 0.35); outline-offset: 3px; }
 
