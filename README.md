@@ -64,3 +64,10 @@ Il sito non contiene analytics, pixel, iframe esterni, form o newsletter. La pag
 - PDF effettivi dei bilanci
 - eventuale revisione finale della privacy
 - dominio definitivo se diverso da `www.scsglobalserviceonlus.it`
+
+## Documenti pubblicati
+
+- Bilanci d'esercizio: 2019-2025
+- Bilanci sociali: 2023-2025
+
+I PDF sono disponibili in `public/documenti/<anno>/` e l'archivio è configurato in `public/data/bilanci.json`.
